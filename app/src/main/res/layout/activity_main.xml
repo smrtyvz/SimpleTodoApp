@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:background="@color/colorNormalGray">
+
+   <android.support.v7.widget.RecyclerView
+       android:id="@+id/activity_main_recyclerView_todoItems"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       tools:listitem="@layout/todo_item">
+   </android.support.v7.widget.RecyclerView>
+
+   <com.aniket.mutativefloatingactionbutton.MutativeFab
+       android:id="@+id/activity_main_fab_add"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       app:fabIcon="@drawable/ic_add"
+       app:fabText="New Item"
+       android:layout_gravity="bottom|center"
+       app:fabBackgroundColor="@color/colorPrimary"
+       app:fabTextColor="@android:color/white"
+       android:layout_margin="4dp"/>
+
+</android.support.design.widget.CoordinatorLayout>
